@@ -17,14 +17,14 @@ maxSkor = 0
 w = turtle.Screen()
 w.title("Yılan Oyunu")
 w.setup(600, 600)
-w.bgcolor("purple")
+w.bgcolor("#127369")
 w.tracer(0) #güncelleme hızı,hiç gecikme olmadan günceller
 
 #yılan nesne
 yilan = turtle.Turtle()
 yilan.speed(0)
 yilan.shape("circle")
-yilan.color("black")
+yilan.color("#10403B")
 yilan.penup()
 yilan.goto(0, 0)
 yilan.yon = "dur"
@@ -79,7 +79,7 @@ w.onkeypress(solaGit, "Left")
 yem = turtle.Turtle()
 yem.speed(0)
 yem.shape("square")
-yem.color("red")
+yem.color("#8C1F28")
 yem.penup()
 yem.goto(0, 100)
 
@@ -96,7 +96,7 @@ def yemiYe():
         kuyruk = turtle.Turtle()
         kuyruk.speed(0)
         kuyruk.shape("circle")
-        kuyruk.color("white")
+        kuyruk.color("#8AA6A3")
         kuyruk.penup()
         Liste.append(kuyruk)
         global skor,maxSkor
@@ -144,3 +144,4 @@ while True:
             pygame.mixer.Sound("dead.mp3").play()
             baslangic()
     time.sleep(0.1)
+
